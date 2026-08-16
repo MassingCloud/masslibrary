@@ -1,0 +1,8 @@
+Space,Type,Levels,Target area (sf),% of gross,Notes
+Operating rooms + sterile core,Back-of-House,1,14600,0.1522,"14,600 sf programmed across 1 level(s)."
+Pre-op / PACU,Back-of-House,1,11200,0.1168,"11,200 sf programmed across 1 level(s)."
+Imaging and diagnostics,Back-of-House,1,8400,0.0876,"8,400 sf programmed across 1 level(s)."
+Medical office suites,Office,2,46700,0.4870,"46,700 sf programmed across 2 level(s)."
+Building services and MEP,Mechanical,3,15000,0.1564,"15,000 sf programmed across 3 level(s)."
+
+TOTAL PROGRAMMED,,,95900,1.0000,"Gross building area 95,900 sf"

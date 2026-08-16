@@ -1,0 +1,8 @@
+Ref,Package,Trade,CSI,Estimated cost,Lead time (weeks),RFQ due,Required on site,Status
+BP-001,Structural steel — mill order and fabrication,Structural,05 12 00,9648000.00,34,2026-04-01,2026-11-25,Awarded
+BP-002,Curtain wall / envelope package,Envelope,08 44 13,5467200.00,30,2026-05-01,2026-11-27,Awarded
+BP-003,Electrical switchgear and distribution,Electrical,26 24 13,3537600.00,46,2026-05-31,2027-04-18,Draft
+BP-004,Air handling units,Mechanical,23 73 00,2894400.00,32,2026-06-30,2027-02-09,Draft
+BP-005,Elevators,Conveying,14 21 00,1801000.00,40,2026-07-30,2027-05-06,Draft
+BP-006,Roofing membrane and insulation,Envelope,07 54 00,1415000.00,16,2026-08-29,2026-12-19,Draft
+BP-007,Raised access floor and cellular deck,Interiors,09 69 00,1286400.00,18,2026-09-28,2027-02-01,Draft

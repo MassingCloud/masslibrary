@@ -1,0 +1,39 @@
+Vantage Point Ambulatory Surgery Center — development pro forma
+"Synthetic sample project. Figures are internally consistent, not market data."
+
+USES OF FUNDS,Amount,$/gross sf,% of total
+Land acquisition,3200000.00,33.37,0.0630
+Hard cost,34524000.00,360.00,0.6798
+Hard cost contingency (5%),1726200.00,18.00,0.0340
+Soft cost (24%),8700048.00,90.72,0.1713
+Construction period interest,2632374.06,27.45,0.0518
+Total development cost,50782622.06,529.54,1.0000
+
+SOURCES OF FUNDS,Amount,% of total
+Construction loan,30469573.24,0.6000
+Sponsor equity,20313048.82,0.4000
+
+OPERATING BASIS,Value
+Net rentable area (sf),74802
+Rent $/sf/yr,74.0
+Vacancy,0.05
+Opex $/sf/yr,21.0
+
+STABILIZED OPERATIONS,Amount
+Effective gross revenue,5258580.60
+Operating expense,1570842.00
+Net operating income,3687738.60
+
+RETURNS,Value
+Yield on cost,0.072618
+Exit capitalisation rate,0.062500
+Spread over exit cap (bps),101
+Stabilised value,59003817.60
+Development profit,8221195.54
+Unlevered IRR,0.118120
+Levered IRR,0.152969
+Equity multiple,2.448
+
+CASH FLOW,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5,Year 6,Year 7
+Unlevered,-50782622.06,3789151.41,3893353.08,4000420.28,4110431.84,4223468.72,4339614.11,74612721.21
+Levered,-20313048.82,1107828.96,1212030.63,1319097.83,1429109.39,1542146.27,1658291.66,41461825.52

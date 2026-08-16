@@ -1,0 +1,27 @@
+CC0 1.0 Universal — Public Domain Dedication
+============================================
+
+Applies to everything in `samples/`: the `.mass` containers, the IFC models inside them, and the
+executive reports, budgets, schedules, schedules of values, pro formas and space programs beside
+them.
+
+The person who associated a work with this deed has dedicated the work to the public domain by
+waiving all of their rights to the work worldwide under copyright law, including all related and
+neighboring rights, to the extent allowed by law.
+
+You can copy, modify, distribute and perform the work, even for commercial purposes, all without
+asking permission.
+
+Full text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+
+A note on what these are
+------------------------
+
+Every sample in this repository is SYNTHETIC. No sample describes a real site, a real party, a real
+contract value, or any data from a real project. The figures are plausible and internally consistent
+so that the samples behave like real projects in software — they are not market data and must not be
+used to underwrite, price, bid, or design anything real.
+
+No element in this library has been field-verified against a constructed building. See the "Level of
+development" section of README.md before citing any LOD claim.

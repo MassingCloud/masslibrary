@@ -1,0 +1,8 @@
+Ref,Approval,Type,Authority,Status,Applied,Issued,Expires
+PMT-001,Zoning / planning entitlement,Planning,Local planning authority,Issued,2025-08-18,2025-10-27,2027-10-27
+PMT-002,Building permit — shell and core,Building,Local building department,Applied,2025-09-01,,
+PMT-003,Fire department plan review,Fire,Local fire authority,Applied,2025-09-15,,
+PMT-004,Site utility connection agreement,Utility,Regional utility provider,Applied,2025-09-29,,
+PMT-005,Stormwater / erosion control permit,Environmental,State environmental agency,Issued,2025-10-13,2025-12-22,2027-12-22
+PMT-006,Elevator / conveyance permit,Building,State elevator authority,Draft,2025-10-27,,
+PMT-007,Affordable housing compliance review,Planning,Local housing authority,Applied,2025-11-10,,

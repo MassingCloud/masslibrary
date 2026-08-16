@@ -1,0 +1,39 @@
+Harborview Residences — development pro forma
+"Synthetic sample project. Figures are internally consistent, not market data."
+
+USES OF FUNDS,Amount,$/gross sf,% of total
+Land acquisition,2800000.00,23.69,0.0754
+Hard cost,25413000.00,215.00,0.6842
+Hard cost contingency (5%),1270650.00,10.75,0.0342
+Soft cost (22%),5870403.00,49.66,0.1580
+Construction period interest,1789271.57,15.14,0.0482
+Total development cost,37143324.57,314.24,1.0000
+
+SOURCES OF FUNDS,Amount,% of total
+Construction loan,23028861.23,0.6200
+Sponsor equity,14114463.34,0.3800
+
+OPERATING BASIS,Value
+Net rentable area (sf),99288
+Rent $/sf/yr,38.4
+Vacancy,0.06
+Opex $/sf/yr,11.85
+
+STABILIZED OPERATIONS,Amount
+Effective gross revenue,3583899.65
+Operating expense,1176562.80
+Net operating income,2407336.85
+
+RETURNS,Value
+Yield on cost,0.064812
+Exit capitalisation rate,0.052500
+Spread over exit cap (bps),123
+Stabilised value,45854035.24
+Development profit,8710710.67
+Unlevered IRR,0.118154
+Levered IRR,0.156919
+Equity multiple,2.588
+
+CASH FLOW,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5,Year 6,Year 7
+Unlevered,-37143324.57,2473538.61,2541560.93,2611453.85,2683268.83,2757058.72,2832877.84,57444692.13
+Levered,-14114463.34,504570.97,572593.29,642486.21,714301.19,788091.08,863910.20,32446863.26

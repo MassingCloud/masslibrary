@@ -1,0 +1,21 @@
+Sheet,Title,Discipline,Status
+G0.01,Cover Sheet and Project Data,General,Issued
+G0.02,Drawing Index and Sheet Register,General,Not issued
+G0.03,Code Analysis and Egress Summary,General,Not issued
+C1.01,Site Plan and Civil Layout,Civil,Not issued
+C2.01,Grading and Drainage Plan,Civil,Not issued
+A1.01,Overall Floor Plan — Level 1,Architectural,Issued
+A1.02,Overall Floor Plan — Typical Level,Architectural,Not issued
+A2.01,Building Elevations,Architectural,Issued
+A3.01,Building Sections,Architectural,Not issued
+A5.01,Enlarged Plans and Core Details,Architectural,Not issued
+A7.01,Wall Types and Assemblies,Architectural,Not issued
+S1.01,Foundation Plan,Structural,Not issued
+S2.01,Framing Plan — Typical Level,Structural,Issued
+S5.01,Typical Connection Details,Structural,Not issued
+M2.01,HVAC Plan — Typical Level,Mechanical,Not issued
+M5.01,Mechanical Schedules,Mechanical,Not issued
+P2.01,Plumbing Plan — Typical Level,Plumbing,Not issued
+E2.01,Power and Lighting Plan,Electrical,Issued
+E5.01,Single Line Diagram,Electrical,Not issued
+FP2.01,Fire Protection Plan,Fire Protection,Not issued

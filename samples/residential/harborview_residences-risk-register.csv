@@ -1,0 +1,12 @@
+Ref,Risk,Category,Impact,Probability,Response,Cost exposure,Schedule exposure (days),Owner
+RISK-001,Escalation on structural steel beyond the carried allowance,Cost,High,Medium,Mitigate,711600.00,0,Development manager
+RISK-002,Long-lead switchgear delivery slips past the energisation date,Schedule,High,Medium,Mitigate,101700.00,45,Development manager
+RISK-003,Unforeseen subsurface conditions at foundation,Site,Medium,Medium,Mitigate,305000.00,21,Development manager
+RISK-004,Design development growth between SD and CD,Design,Medium,High,Accept,889500.00,0,Development manager
+RISK-005,Permit review cycle longer than programmed,Approvals,Medium,Medium,Mitigate,76200.00,30,Development manager
+RISK-006,Subcontractor default during buyout,Commercial,High,Low,Transfer,457400.00,35,Development manager
+RISK-007,Adverse weather beyond the allowance in the baseline,Schedule,Low,High,Accept,50800.00,14,Development manager
+RISK-008,Interest rate movement before the construction loan is fixed,Finance,High,Medium,Transfer,533700.00,0,Development manager
+RISK-009,Unit mix revision in response to leasing feedback,Design,Medium,Medium,Accept,279500.00,15,Development manager
+
+,TOTAL UNWEIGHTED EXPOSURE,,,,,3405400.00,160,

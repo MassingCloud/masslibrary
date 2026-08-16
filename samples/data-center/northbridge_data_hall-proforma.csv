@@ -1,0 +1,39 @@
+Northbridge Data Hall — development pro forma
+"Synthetic sample project. Figures are internally consistent, not market data."
+
+USES OF FUNDS,Amount,$/gross sf,% of total
+Land acquisition,7900000.00,125.40,0.0619
+Hard cost,91350000.00,1450.00,0.7162
+Hard cost contingency (5%),4567500.00,72.50,0.0358
+Soft cost (19%),18224325.00,289.27,0.1429
+Construction period interest,5500730.16,87.31,0.0431
+Total development cost,127542555.16,2024.49,1.0000
+
+SOURCES OF FUNDS,Amount,% of total
+Construction loan,70148405.34,0.5500
+Sponsor equity,57394149.82,0.4500
+
+OPERATING BASIS,Value
+IT load (kW),12000
+Rent per kW / month,125.0
+Vacancy,0.05
+Opex ratio,0.4
+
+STABILIZED OPERATIONS,Amount
+Effective gross revenue,17100000.00
+Operating expense,6840000.00
+Net operating income,10260000.00
+
+RETURNS,Value
+Yield on cost,0.080444
+Exit capitalisation rate,0.067500
+Spread over exit cap (bps),129
+Stabilised value,152000000.00
+Development profit,24457444.84
+Unlevered IRR,0.128834
+Levered IRR,0.164511
+Equity multiple,2.540
+
+CASH FLOW,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5,Year 6,Year 7
+Unlevered,-127542555.16,10542150.00,10832059.13,11129940.75,11436014.12,11750504.51,12073643.38,193104510.77
+Levered,-57394149.82,4123570.91,4413480.04,4711361.66,5017435.03,5331925.42,5655064.29,116537526.34

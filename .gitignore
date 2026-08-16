@@ -1,0 +1,14 @@
+# Build intermediates: scratch database, blob storage, authored IFCs, frag tiles, report.
+.build/
+.build-log.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

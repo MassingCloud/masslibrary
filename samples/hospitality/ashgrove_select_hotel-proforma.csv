@@ -1,0 +1,39 @@
+Ashgrove Select Service Hotel — development pro forma
+"Synthetic sample project. Figures are internally consistent, not market data."
+
+USES OF FUNDS,Amount,$/gross sf,% of total
+Land acquisition,2750000.00,32.51,0.0949
+Hard cost,19627200.00,232.00,0.6772
+Hard cost contingency (5%),981360.00,11.60,0.0339
+Soft cost (21%),4327797.60,51.16,0.1493
+Construction period interest,1298144.09,15.34,0.0448
+Total development cost,28984501.69,342.61,1.0000
+
+SOURCES OF FUNDS,Amount,% of total
+Construction loan,17390701.01,0.6000
+Sponsor equity,11593800.68,0.4000
+
+OPERATING BASIS,Value
+Keys,132
+ADR,172.0
+Occupancy,0.74
+RevPAR,127.28
+
+STABILIZED OPERATIONS,Amount
+Effective gross revenue,7236173.47
+Operating expense,4486427.55
+Net operating income,2749745.92
+
+RETURNS,Value
+Yield on cost,0.094870
+Exit capitalisation rate,0.085000
+Spread over exit cap (bps),99
+Stabilised value,32349952.00
+Development profit,3365450.31
+Unlevered IRR,0.135308
+Levered IRR,0.184505
+Equity multiple,2.677
+
+CASH FLOW,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5,Year 6,Year 7
+Unlevered,-28984501.69,2825363.93,2903061.44,2982895.63,3064925.26,3149210.71,3235814.00,41764365.78
+Levered,-11593800.68,1181942.68,1259640.19,1339474.38,1421504.01,1505789.46,1592392.75,22730243.52

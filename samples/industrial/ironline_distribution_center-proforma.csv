@@ -1,0 +1,40 @@
+Ironline Distribution Center — development pro forma
+"Synthetic sample project. Figures are internally consistent, not market data."
+
+USES OF FUNDS,Amount,$/gross sf,% of total
+Land acquisition,6800000.00,20.00,0.1463
+Hard cost,31280000.00,92.00,0.6729
+Hard cost contingency (5%),1564000.00,4.60,0.0336
+Soft cost (16%),5255040.00,15.46,0.1130
+Construction period interest,1589089.27,4.67,0.0342
+Total development cost,46488129.27,136.73,1.0000
+
+SOURCES OF FUNDS,Amount,% of total
+Construction loan,30217284.03,0.6500
+Sponsor equity,16270845.24,0.3500
+
+OPERATING BASIS,Value
+Net rentable area (sf),326400
+Rent $/sf/yr,9.85
+Vacancy,0.04
+Opex $/sf/yr,2.15
+Lease structure,"Triple net — $701,760/yr recovered"
+
+STABILIZED OPERATIONS,Amount
+Effective gross revenue,3086438.40
+Operating expense,0.00
+Net operating income,3086438.40
+
+RETURNS,Value
+Yield on cost,0.066392
+Exit capitalisation rate,0.057500
+Spread over exit cap (bps),89
+Stabilised value,53677189.57
+Development profit,7189060.30
+Unlevered IRR,0.111254
+Levered IRR,0.150575
+Equity multiple,2.469
+
+CASH FLOW,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5,Year 6,Year 7
+Unlevered,-46488129.27,3171315.46,3258526.63,3348136.11,3440209.86,3534815.63,3632023.06,67561155.86
+Levered,-16270845.24,663280.89,750492.06,840101.54,932175.29,1026781.06,1123988.49,34835837.26

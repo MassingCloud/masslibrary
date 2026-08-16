@@ -1,0 +1,8 @@
+Space,Type,Levels,Target area (sf),% of gross,Notes
+Arrivals hall + baggage claim,Lobby,1,62000,0.2323,"62,000 sf programmed across 1 level(s)."
+Ticketing and check-in,Lobby,1,38000,0.1424,"38,000 sf programmed across 1 level(s)."
+Concourse + hold rooms,Circulation / Core,2,96000,0.3597,"96,000 sf programmed across 2 level(s)."
+Concessions,Retail,2,21900,0.0821,"21,900 sf programmed across 2 level(s)."
+Airline and airport ops,Back-of-House,2,49000,0.1836,"49,000 sf programmed across 2 level(s)."
+
+TOTAL PROGRAMMED,,,266900,1.0000,"Gross building area 266,900 sf"

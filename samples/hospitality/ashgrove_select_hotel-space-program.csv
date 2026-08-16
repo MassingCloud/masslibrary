@@ -1,0 +1,7 @@
+Space,Type,Levels,Target area (sf),% of gross,Notes
+Guestrooms,Residential Unit,4,52800,0.6241,"52,800 sf programmed across 4 level(s)."
+"Lobby, breakfast, meeting",Lobby,1,12400,0.1466,"12,400 sf programmed across 1 level(s)."
+Back of house + laundry,Back-of-House,1,8300,0.0981,"8,300 sf programmed across 1 level(s)."
+Circulation and MEP,Circulation / Core,5,11100,0.1312,"11,100 sf programmed across 5 level(s)."
+
+TOTAL PROGRAMMED,,,84600,1.0000,"Gross building area 84,600 sf"

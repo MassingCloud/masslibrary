@@ -1,0 +1,39 @@
+Foundry Row — development pro forma
+"Synthetic sample project. Figures are internally consistent, not market data."
+
+USES OF FUNDS,Amount,$/gross sf,% of total
+Land acquisition,7200000.00,29.23,0.0828
+Hard cost,57880500.00,235.00,0.6653
+Hard cost contingency (5%),2894025.00,11.75,0.0333
+Soft cost (23%),13978140.75,56.75,0.1607
+Construction period interest,5048284.21,20.50,0.0580
+Total development cost,87000949.96,353.23,1.0000
+
+SOURCES OF FUNDS,Amount,% of total
+Construction loan,52200569.98,0.6000
+Sponsor equity,34800379.98,0.4000
+
+OPERATING BASIS,Value
+Net rentable area (sf),199503
+Rent $/sf/yr,44.0
+Vacancy,0.07
+Opex $/sf/yr,12.5
+
+STABILIZED OPERATIONS,Amount
+Effective gross revenue,8163662.76
+Operating expense,2493787.50
+Net operating income,5669875.26
+
+RETURNS,Value
+Yield on cost,0.065170
+Exit capitalisation rate,0.055000
+Spread over exit cap (bps),102
+Stabilised value,103088641.09
+Development profit,16087691.13
+Unlevered IRR,0.113305
+Levered IRR,0.143164
+Equity multiple,2.382
+
+CASH FLOW,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5,Year 6,Year 7
+Unlevered,-87000949.96,5825796.83,5986006.24,6150621.41,6319763.50,6493557.00,6672129.82,129449933.20
+Levered,-34800379.98,1284347.24,1444556.65,1609171.82,1778313.91,1952107.41,2130680.23,72707913.63

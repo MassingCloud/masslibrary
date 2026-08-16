@@ -1,0 +1,39 @@
+Meridian Commerce Center — development pro forma
+"Synthetic sample project. Figures are internally consistent, not market data."
+
+USES OF FUNDS,Amount,$/gross sf,% of total
+Land acquisition,9000000.00,33.58,0.0911
+Hard cost,64320000.00,240.00,0.6509
+Hard cost contingency (5%),3216000.00,12.00,0.0325
+Soft cost (24%),16208640.00,60.48,0.1640
+Construction period interest,6077363.04,22.68,0.0615
+Total development cost,98822003.04,368.74,1.0000
+
+SOURCES OF FUNDS,Amount,% of total
+Construction loan,57316761.76,0.5800
+Sponsor equity,41505241.28,0.4200
+
+OPERATING BASIS,Value
+Net rentable area (sf),233160
+Rent $/sf/yr,54.0
+Vacancy,0.11
+Opex $/sf/yr,16.0
+
+STABILIZED OPERATIONS,Amount
+Effective gross revenue,11205669.60
+Operating expense,3730560.00
+Net operating income,7475109.60
+
+RETURNS,Value
+Yield on cost,0.075642
+Exit capitalisation rate,0.067500
+Spread over exit cap (bps),81
+Stabilised value,110742364.44
+Development profit,11920361.40
+Unlevered IRR,0.116702
+Levered IRR,0.146714
+Equity multiple,2.333
+
+CASH FLOW,Year 0,Year 1,Year 2,Year 3,Year 4,Year 5,Year 6,Year 7
+Unlevered,-98822003.04,7680675.11,7891893.68,8108920.76,8331916.08,8561043.77,8796472.47,140689803.34
+Levered,-41505241.28,2550824.93,2762043.50,2979070.58,3202065.90,3431193.59,3666622.29,78243191.40

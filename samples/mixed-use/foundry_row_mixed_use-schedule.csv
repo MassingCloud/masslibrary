@@ -1,0 +1,21 @@
+Activity ID,WBS,Activity name,Type,Trade,Start,Finish,Duration (wd),Predecessor,Crew,Weather sensitivity,EV method,Location
+ACT-001,1.1,Mobilization and site logistics,Summary,Sitework,2026-03-02,2026-04-10,28,,10,Rain / wet,milestone,Whole building
+ACT-002,1.2,Mass excavation and shoring,Summary,Sitework,2026-04-10,2026-06-17,49,ACT-001,12,Rain / wet,units,Whole building
+ACT-003,1.3,Foundations and below-grade,Summary,Concrete,2026-06-17,2026-09-21,69,ACT-002,14,Freeze / cold,percent,Whole building
+ACT-004,1.4,Superstructure,Summary,Structure,2026-09-21,2027-04-03,139,ACT-003,16,Wind,units,Whole building
+ACT-004-01,1.4.1,"Level 1 — frame, deck and pour",Task,Structure,2026-09-21,2026-10-09,13,ACT-004,14,Wind,units,Level 1
+ACT-004-02,1.4.2,"Level 2 — frame, deck and pour",Task,Structure,2026-10-09,2026-10-27,13,ACT-004-01,14,Wind,units,Level 2
+ACT-004-03,1.4.3,"Level 3 — frame, deck and pour",Task,Structure,2026-10-27,2026-11-14,13,ACT-004-02,14,Wind,units,Level 3
+ACT-004-04,1.4.4,"Level 4 — frame, deck and pour",Task,Structure,2026-11-14,2026-12-02,13,ACT-004-03,14,Wind,units,Level 4
+ACT-004-05,1.4.5,"Level 5 — frame, deck and pour",Task,Structure,2026-12-02,2026-12-20,13,ACT-004-04,14,Wind,units,Level 5
+ACT-004-06,1.4.6,"Level 6 — frame, deck and pour",Task,Structure,2026-12-20,2027-01-07,13,ACT-004-05,14,Wind,units,Level 6
+ACT-004-07,1.4.7,"Level 7 — frame, deck and pour",Task,Structure,2027-01-07,2027-01-25,13,ACT-004-06,14,Wind,units,Level 7
+ACT-004-08,1.4.8,"Level 8 — frame, deck and pour",Task,Structure,2027-01-25,2027-02-12,13,ACT-004-07,14,Wind,units,Level 8
+ACT-004-09,1.4.9,"Level 9 — frame, deck and pour",Task,Structure,2027-02-12,2027-03-02,13,ACT-004-08,14,Wind,units,Level 9
+ACT-004-10,1.4.10,"Level 10 — frame, deck and pour",Task,Structure,2027-03-02,2027-03-20,13,ACT-004-09,14,Wind,units,Level 10
+ACT-005,1.5,Building envelope,Summary,Envelope,2027-04-03,2027-08-26,104,ACT-004,18,Wind,percent,Whole building
+ACT-006,1.6,MEP rough-in,Summary,MEP,2027-08-26,2028-01-28,111,ACT-005,20,None,percent,Whole building
+ACT-007,1.7,Interior build-out,Summary,Interiors,2028-01-28,2028-06-02,90,ACT-006,22,None,percent,Whole building
+ACT-008,1.8,Finishes and fit-out,Summary,Finishes,2028-06-02,2028-08-19,56,ACT-007,24,None,percent,Whole building
+ACT-009,1.9,Commissioning and turnover,Summary,Commissioning,2028-08-19,2028-10-26,49,ACT-008,26,None,0-100,Whole building
+ACT-900,1.10,Substantial completion,Milestone,Commissioning,2028-10-26,2028-10-26,0,ACT-009,0,None,milestone,Whole building
