@@ -207,6 +207,17 @@ def main() -> int:
     with open(out, "w", encoding="utf-8") as fh:
         fh.write("\n".join(L) + "\n")
     print(f"\nwrote {out}")
+
+    # The same measurements as data, so the site renders the audit rather than re-deriving it.
+    # Re-opening eight IFCs to build a web page would be a second measurement that can disagree
+    # with the first one.
+    import json
+    data = {r["spec"]["key"]: {k: v for k, v in r.items() if k != "spec"} for r in rows}
+    js = os.path.join(ROOT, "docs", "_data", "lod-audit.json")
+    os.makedirs(os.path.dirname(js), exist_ok=True)
+    with open(js, "w", encoding="utf-8") as fh:
+        json.dump(data, fh, indent=1)
+    print(f"wrote {js}")
     return 0
 
 

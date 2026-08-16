@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LOD audit — Massing Sample Library</title>
+<meta name="description" content="Free CC0 .mass sample projects for the Massing AEC platform.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Crect%20width='16'%20height='16'%20fill='%2312161a'/%3E%3Crect%20x='3'%20y='3'%20width='10'%20height='10'%20fill='none'%20stroke='%23e8eaed'%20stroke-width='1'/%3E%3Cline%20x1='3'%20y1='8'%20x2='13'%20y2='8'%20stroke='%23e8eaed'%20stroke-width='.7'/%3E%3Cline%20x1='8'%20y1='3'%20x2='8'%20y2='13'%20stroke='%23e8eaed'%20stroke-width='.7'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">
+    <span class="mark"></span>
+    <span><b>Massing Sample Library</b><em>MassingCloud</em></span>
+  </a>
+  <nav><a href="index.html">Library</a><a href="catalog.html">Catalog</a><a href="lod-audit.html" class=on>LOD audit</a><a class="ghost" href="https://github.com/MassingCloud/masslibrary">GitHub &#8599;</a></nav>
+</header>
+
+<section class="wrap head">
+  <p class="eyebrow"><a href="index.html">Library</a> / LOD audit</p>
+  <h1>LOD audit</h1>
+  <p class="lede">What each container actually carries, read out of the IFC inside it by
+    <code>tools/lod_audit.py</code>. An LOD claim in a README is marketing; this is the
+    measurement.</p>
+</section>
+
+<section class="wrap">
+  <h2 class="rule">Record-layer coverage</h2>
+  <p class="muted">Share of <code>IfcElement</code> occurrences carrying each part of the LOD 500
+    record.</p>
+  <table class="data wide">
+    <thead><tr><th>Sample</th><th class=n>Elements</th><th class=n>LOD stage</th>
+      <th class=n>As-built</th><th class=n>Measured dim</th><th class=n>Manufacturer</th>
+      <th class=n>Classified</th><th class=n>Material</th></tr></thead>
+    <tbody><tr>
+  <td><a href="harborview_residences.html">Harborview Residences</a></td>
+  <td class=n>5,480</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>92%</td>
+  <td class=n>100%</td><td class=n>93%</td>
+</tr><tr>
+  <td><a href="meridian_commerce_center.html">Meridian Commerce Center</a></td>
+  <td class=n>10,072</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>78%</td>
+  <td class=n>100%</td><td class=n>94%</td>
+</tr><tr>
+  <td><a href="cascade_regional_terminal.html">Cascade Regional Terminal</a></td>
+  <td class=n>4,492</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>82%</td>
+  <td class=n>100%</td><td class=n>90%</td>
+</tr><tr>
+  <td><a href="ashgrove_select_hotel.html">Ashgrove Select Service Hotel</a></td>
+  <td class=n>3,780</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>92%</td>
+  <td class=n>100%</td><td class=n>92%</td>
+</tr><tr>
+  <td><a href="ironline_distribution_center.html">Ironline Distribution Center</a></td>
+  <td class=n>3,286</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>85%</td>
+  <td class=n>100%</td><td class=n>85%</td>
+</tr><tr>
+  <td><a href="vantage_point_asc.html">Vantage Point Ambulatory Surgery Center</a></td>
+  <td class=n>2,607</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>84%</td>
+  <td class=n>100%</td><td class=n>84%</td>
+</tr><tr>
+  <td><a href="foundry_row_mixed_use.html">Foundry Row</a></td>
+  <td class=n>7,054</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>92%</td>
+  <td class=n>100%</td><td class=n>92%</td>
+</tr><tr>
+  <td><a href="northbridge_data_hall.html">Northbridge Data Hall</a></td>
+  <td class=n>1,014</td>
+  <td class=n>100%</td><td class=n>100%</td>
+  <td class=n>100%</td><td class=n>84%</td>
+  <td class=n>100%</td><td class=n>84%</td>
+</tr></tbody>
+  </table>
+  <p class="muted">Manufacturer and material fall short of 100% by design, and by the same reason:
+    an <code>IfcOpeningElement</code> is a void and an <code>IfcElementAssembly</code> is a
+    grouping — neither is a thing anybody manufactures or pours. Every element that is a physical
+    product carries both, which is why the two columns track each other.</p>
+</section>
+
+<section class="wrap">
+  <h2 class="rule">Fabrication and analysis</h2>
+  <table class="data wide">
+    <thead><tr><th>Sample</th><th>Schema</th><th class=n>Assemblies</th><th class=n>Rebar</th>
+      <th class=n>Fasteners</th><th class=n>Analytical members</th><th class=n>Loads</th>
+      <th class=n>Supports</th><th class=n>MEP ports</th></tr></thead>
+    <tbody><tr>
+  <td><a href="harborview_residences.html">Harborview Residences</a></td>
+  <td>IFC4</td><td class=n>240</td><td class=n>3,600</td>
+  <td class=n>0</td><td class=n>636</td>
+  <td class=n>636</td><td class=n>280</td>
+  <td class=n>642</td>
+</tr><tr>
+  <td><a href="meridian_commerce_center.html">Meridian Commerce Center</a></td>
+  <td>IFC4</td><td class=n>600</td><td class=n>0</td>
+  <td class=n>2,100</td><td class=n>2,748</td>
+  <td class=n>2,748</td><td class=n>1,959</td>
+  <td class=n>1,098</td>
+</tr><tr>
+  <td><a href="cascade_regional_terminal.html">Cascade Regional Terminal</a></td>
+  <td>IFC4</td><td class=n>466</td><td class=n>0</td>
+  <td class=n>1,568</td><td class=n>818</td>
+  <td class=n>818</td><td class=n>671</td>
+  <td class=n>468</td>
+</tr><tr>
+  <td><a href="ashgrove_select_hotel.html">Ashgrove Select Service Hotel</a></td>
+  <td>IFC4</td><td class=n>165</td><td class=n>2,475</td>
+  <td class=n>0</td><td class=n>425</td>
+  <td class=n>425</td><td class=n>198</td>
+  <td class=n>441</td>
+</tr><tr>
+  <td><a href="ironline_distribution_center.html">Ironline Distribution Center</a></td>
+  <td>IFC4</td><td class=n>405</td><td class=n>0</td>
+  <td class=n>1,358</td><td class=n>405</td>
+  <td class=n>405</td><td class=n>286</td>
+  <td class=n>397</td>
+</tr><tr>
+  <td><a href="vantage_point_asc.html">Vantage Point Ambulatory Surgery Center</a></td>
+  <td>IFC4</td><td class=n>321</td><td class=n>0</td>
+  <td class=n>1,083</td><td class=n>321</td>
+  <td class=n>321</td><td class=n>160</td>
+  <td class=n>321</td>
+</tr><tr>
+  <td><a href="foundry_row_mixed_use.html">Foundry Row</a></td>
+  <td>IFC4</td><td class=n>250</td><td class=n>4,000</td>
+  <td class=n>0</td><td class=n>1,070</td>
+  <td class=n>1,070</td><td class=n>440</td>
+  <td class=n>1,056</td>
+</tr><tr>
+  <td><a href="northbridge_data_hall.html">Northbridge Data Hall</a></td>
+  <td>IFC4</td><td class=n>121</td><td class=n>0</td>
+  <td class=n>408</td><td class=n>121</td>
+  <td class=n>121</td><td class=n>90</td>
+  <td class=n>125</td>
+</tr></tbody>
+  </table>
+</section>
+
+<section class="wrap">
+  <h2 class="rule">Space and area</h2>
+  <p class="muted">Modelled <code>IfcSpace</code> area against declared gross area. These are the
+    same number to within rounding, which is the point — the model and the money describe one
+    building.</p>
+  <table class="data wide">
+    <thead><tr><th>Sample</th><th class=n>Spaces</th><th class=n>Modelled area</th>
+      <th class=n>Declared gross</th><th class=n>Agreement</th><th class=n>Types</th>
+      <th class=n>Material sets</th></tr></thead>
+    <tbody><tr>
+  <td><a href="harborview_residences.html">Harborview Residences</a></td>
+  <td class=n>72</td><td class=n>117,994 sf</td>
+  <td class=n>118,200 sf</td><td class=n>99.8%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr><tr>
+  <td><a href="meridian_commerce_center.html">Meridian Commerce Center</a></td>
+  <td class=n>108</td><td class=n>267,992 sf</td>
+  <td class=n>268,000 sf</td><td class=n>100.0%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr><tr>
+  <td><a href="cascade_regional_terminal.html">Cascade Regional Terminal</a></td>
+  <td class=n>24</td><td class=n>266,944 sf</td>
+  <td class=n>266,900 sf</td><td class=n>100.0%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr><tr>
+  <td><a href="ashgrove_select_hotel.html">Ashgrove Select Service Hotel</a></td>
+  <td class=n>60</td><td class=n>84,611 sf</td>
+  <td class=n>84,600 sf</td><td class=n>100.0%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr><tr>
+  <td><a href="ironline_distribution_center.html">Ironline Distribution Center</a></td>
+  <td class=n>9</td><td class=n>339,986 sf</td>
+  <td class=n>340,000 sf</td><td class=n>100.0%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr><tr>
+  <td><a href="vantage_point_asc.html">Vantage Point Ambulatory Surgery Center</a></td>
+  <td class=n>36</td><td class=n>95,906 sf</td>
+  <td class=n>95,900 sf</td><td class=n>100.0%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr><tr>
+  <td><a href="foundry_row_mixed_use.html">Foundry Row</a></td>
+  <td class=n>120</td><td class=n>246,257 sf</td>
+  <td class=n>246,300 sf</td><td class=n>100.0%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr><tr>
+  <td><a href="northbridge_data_hall.html">Northbridge Data Hall</a></td>
+  <td class=n>4</td><td class=n>63,033 sf</td>
+  <td class=n>63,000 sf</td><td class=n>100.1%</td>
+  <td class=n>3</td><td class=n>3</td>
+</tr></tbody>
+  </table>
+</section>
+
+<section class="wrap band">
+  <h2 class="rule">What LOD 500 means here</h2>
+  <p>BIMForum defines LOD 500 as a <b>field-verified</b> representation: an element reaches it by
+    being checked against what was actually built. These models are synthetic, so no element in this
+    library has been verified against a physical building, and the verification records say so in
+    their own note field.</p>
+  <p>What the containers do carry, on <b>every element</b>, is the complete structure that
+    definition requires:</p>
+  <ul class="ticks">
+    <li><code>Pset_Massing_AsBuilt</code> with verification method, verifier and date</li>
+    <li>measured-versus-design dimensions with variance and a stated tolerance, distributed across
+      the model rather than one value repeated</li>
+    <li>manufacturer, model, serial and barcode on every product element</li>
+    <li>O&amp;M and warranty document references bound to the asset by IFC GlobalId</li>
+    <li>Uniformat II classification and MasterFormat spec links</li>
+    <li>construction phase status</li>
+    <li>an LOD stage on the element itself, so the claim travels with the geometry</li>
+  </ul>
+  <p class="callout"><b>One stated cap.</b> The fabrication pass is bounded at 300 connections and
+    250 reinforcement cages per model. Detailing all 1,200 members of the twelve-storey office
+    produced 20,857 elements and a container too large to be a sample anybody downloads. The cap is
+    reported in the build log, in each executive report and here — a capped model that says
+    “300 of 1,200 members detailed” is honest; one that quietly details a quarter and calls itself
+    LOD 400 is not.</p>
+</section>
+
+<footer>
+  <div>
+    <p><b>Samples</b> are dedicated to the public domain under
+      <a href="https://github.com/MassingCloud/masslibrary/blob/main/LICENSE-SAMPLES">CC0 1.0</a>.
+      <b>Generator code</b> is <a href="https://github.com/MassingCloud/masslibrary/blob/main/LICENSE">MIT</a>.</p>
+    <p class="muted">Every project here is synthetic. No sample describes a real site, party or
+      contract value. The figures are plausible and internally consistent — they are not market
+      data, and must not be used to underwrite, price, bid or design anything real.</p>
+  </div>
+  <p class="muted small">Generated 16 August 2026 by <code>tools/site.py</code>.</p>
+</footer>
+</body>
+</html>

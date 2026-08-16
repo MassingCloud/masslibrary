@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maple Grove House — Massing Sample Library</title>
+<meta name="description" content="Free CC0 .mass sample projects for the Massing AEC platform.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2016%2016'%3E%3Crect%20width='16'%20height='16'%20fill='%2312161a'/%3E%3Crect%20x='3'%20y='3'%20width='10'%20height='10'%20fill='none'%20stroke='%23e8eaed'%20stroke-width='1'/%3E%3Cline%20x1='3'%20y1='8'%20x2='13'%20y2='8'%20stroke='%23e8eaed'%20stroke-width='.7'/%3E%3Cline%20x1='8'%20y1='3'%20x2='8'%20y2='13'%20stroke='%23e8eaed'%20stroke-width='.7'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">
+    <span class="mark"></span>
+    <span><b>Massing Sample Library</b><em>MassingCloud</em></span>
+  </a>
+  <nav><a href="index.html">Library</a><a href="catalog.html">Catalog</a><a href="lod-audit.html">LOD audit</a><a class="ghost" href="https://github.com/MassingCloud/masslibrary">GitHub &#8599;</a></nav>
+</header>
+
+<section class="wrap head">
+  <p class="eyebrow"><a href="index.html">Library</a> / Authoring demo</p>
+  <h1>Maple Grove House</h1>
+  <p class="lede">A small single-family house — 23 elements across two levels. It is here because of
+    <em>how</em> it was made, not what it is.</p>
+  <div class="counts">
+    <div class="stat"><span class="k">Elements</span><span class="v">23</span><span class="note">7 walls, 3 slabs, a roof, 2 doors, 4 windows</span></div>
+    <div class="stat"><span class="k">Data rows</span><span class="v">147</span></div>
+    <div class="stat"><span class="k">Size</span><span class="v">0.03 MB</span></div>
+  </div>
+  <p class="dlbar">
+    <a class="btn" href="https://raw.githubusercontent.com/MassingCloud/masslibrary/main/samples/authoring-demo/maple_grove_house.mass">Download <code>.mass</code></a>
+  </p>
+</section>
+
+<section class="wrap">
+  <h2 class="rule">Why it is here</h2>
+  <p>Every element was authored <b>in the browser</b>, through the same edit recipes a user drives,
+    rather than imported from another tool. It is deliberately small: it exists to prove the
+    authoring path end to end, and a 23-element model where every element can be accounted for
+    proves that better than a large one.</p>
+  <p>The sector samples are generated head-lessly by <code>tools/build_library.py</code>. This one
+    came out of the product's own UI. If the two ever disagree about what a <code>.mass</code>
+    should contain, this container is the one that reflects what a user's own save actually
+    produces.</p>
+  <p class="muted"><b>No commercial data.</b> Unlike the sector samples it carries no budget,
+    schedule or pro forma — it predates them and has not been backfilled, because backfilling it
+    would make it a worse record of what the authoring path produces on its own.</p>
+</section>
+
+<footer>
+  <div>
+    <p><b>Samples</b> are dedicated to the public domain under
+      <a href="https://github.com/MassingCloud/masslibrary/blob/main/LICENSE-SAMPLES">CC0 1.0</a>.
+      <b>Generator code</b> is <a href="https://github.com/MassingCloud/masslibrary/blob/main/LICENSE">MIT</a>.</p>
+    <p class="muted">Every project here is synthetic. No sample describes a real site, party or
+      contract value. The figures are plausible and internally consistent — they are not market
+      data, and must not be used to underwrite, price, bid or design anything real.</p>
+  </div>
+  <p class="muted small">Generated 16 August 2026 by <code>tools/site.py</code>.</p>
+</footer>
+</body>
+</html>

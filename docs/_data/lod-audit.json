@@ -1,0 +1,242 @@
+{
+ "harborview_residences": {
+  "schema": "IFC4",
+  "products": 7760,
+  "elements": 5480,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 72,
+  "space_area_sf": 117993.98142,
+  "analytical_members": 636,
+  "analytical_actions": 636,
+  "analytical_supports": 280,
+  "assemblies": 240,
+  "rebar": 3600,
+  "fasteners": 0,
+  "ports": 642,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.9240875912408759,
+   "phase": 1.0,
+   "spec_link": 0.17116788321167883
+  },
+  "classified": 1.0,
+  "materialed": 0.9253649635036496,
+  "lod_stages": {
+   "500": 5480
+  },
+  "bytes": 5700056
+ },
+ "meridian_commerce_center": {
+  "schema": "IFC4",
+  "products": 18759,
+  "elements": 10072,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 108,
+  "space_area_sf": 267991.65060839977,
+  "analytical_members": 2748,
+  "analytical_actions": 2748,
+  "analytical_supports": 1959,
+  "assemblies": 600,
+  "rebar": 0,
+  "fasteners": 2100,
+  "ports": 1098,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.7770055599682287,
+   "phase": 1.0,
+   "spec_link": 0.15885623510722796
+  },
+  "classified": 1.0,
+  "materialed": 0.9403296266878475,
+  "lod_stages": {
+   "500": 10072
+  },
+  "bytes": 10353687
+ },
+ "cascade_regional_terminal": {
+  "schema": "IFC4",
+  "products": 7297,
+  "elements": 4492,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 24,
+  "space_area_sf": 266944.1068872001,
+  "analytical_members": 818,
+  "analytical_actions": 818,
+  "analytical_supports": 671,
+  "assemblies": 466,
+  "rebar": 0,
+  "fasteners": 1568,
+  "ports": 468,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.8170080142475512,
+   "phase": 1.0,
+   "spec_link": 0.16251113089937666
+  },
+  "classified": 1.0,
+  "materialed": 0.8960373998219056,
+  "lod_stages": {
+   "500": 4492
+  },
+  "bytes": 4664272
+ },
+ "ashgrove_select_hotel": {
+  "schema": "IFC4",
+  "products": 5341,
+  "elements": 3780,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 60,
+  "space_area_sf": 84610.7909460001,
+  "analytical_members": 425,
+  "analytical_actions": 425,
+  "analytical_supports": 198,
+  "assemblies": 165,
+  "rebar": 2475,
+  "fasteners": 0,
+  "ports": 441,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.9203703703703704,
+   "phase": 1.0,
+   "spec_link": 0.17116402116402116
+  },
+  "classified": 1.0,
+  "materialed": 0.921957671957672,
+  "lod_stages": {
+   "500": 3780
+  },
+  "bytes": 3992242
+ },
+ "ironline_distribution_center": {
+  "schema": "IFC4",
+  "products": 4792,
+  "elements": 3286,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 9,
+  "space_area_sf": 339986.3855606999,
+  "analytical_members": 405,
+  "analytical_actions": 405,
+  "analytical_supports": 286,
+  "assemblies": 405,
+  "rebar": 0,
+  "fasteners": 1358,
+  "ports": 397,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.8484479610468655,
+   "phase": 1.0,
+   "spec_link": 0.21028606208155812
+  },
+  "classified": 1.0,
+  "materialed": 0.8490566037735849,
+  "lod_stages": {
+   "500": 3286
+  },
+  "bytes": 3550017
+ },
+ "vantage_point_asc": {
+  "schema": "IFC4",
+  "products": 3774,
+  "elements": 2607,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 36,
+  "space_area_sf": 95906.4381,
+  "analytical_members": 321,
+  "analytical_actions": 321,
+  "analytical_supports": 160,
+  "assemblies": 321,
+  "rebar": 0,
+  "fasteners": 1083,
+  "ports": 321,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.8362102032988109,
+   "phase": 1.0,
+   "spec_link": 0.1883390870732643
+  },
+  "classified": 1.0,
+  "materialed": 0.8377445339470656,
+  "lod_stages": {
+   "500": 2607
+  },
+  "bytes": 2828488
+ },
+ "foundry_row_mixed_use": {
+  "schema": "IFC4",
+  "products": 10832,
+  "elements": 7054,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 120,
+  "space_area_sf": 246256.7329800003,
+  "analytical_members": 1070,
+  "analytical_actions": 1070,
+  "analytical_supports": 440,
+  "assemblies": 250,
+  "rebar": 4000,
+  "fasteners": 0,
+  "ports": 1056,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.9174936206407712,
+   "phase": 1.0,
+   "spec_link": 0.2174652679330876
+  },
+  "classified": 1.0,
+  "materialed": 0.9190530195633683,
+  "lod_stages": {
+   "500": 7054
+  },
+  "bytes": 7477765
+ },
+ "northbridge_data_hall": {
+  "schema": "IFC4",
+  "products": 1479,
+  "elements": 1014,
+  "types": 3,
+  "material_sets": 3,
+  "spaces": 4,
+  "space_area_sf": 63033.456959999996,
+  "analytical_members": 121,
+  "analytical_actions": 121,
+  "analytical_supports": 90,
+  "assemblies": 121,
+  "rebar": 0,
+  "fasteners": 408,
+  "ports": 125,
+  "coverage": {
+   "lod_stage": 1.0,
+   "as_built": 1.0,
+   "measured_dim": 1.0,
+   "manufacturer": 0.8402366863905325,
+   "phase": 1.0,
+   "spec_link": 0.21400394477317555
+  },
+  "classified": 1.0,
+  "materialed": 0.8422090729783037,
+  "lod_stages": {
+   "500": 1014
+  },
+  "bytes": 1200682
+ }
+}
