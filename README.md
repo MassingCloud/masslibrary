@@ -1,11 +1,16 @@
 # Massing Sample Library
 
+### 📐 **[Browse the library →](https://massingcloud.github.io/masslibrary/)**
+
 Free, openly-licensed **`.mass` sample projects** for the [Massing](https://massing.cloud) AEC
 platform — one per building sector, each carrying a real model *and* the commercial data a project
-actually runs on: an executive report, a budget, a schedule, a schedule of values, a space program
-and a development pro forma.
+actually runs on: an executive report, a budget, a schedule, a schedule of values, a space program,
+a development pro forma, approvals, risk, procurement and issued drawings.
 
 **Nothing here is a mesh.** A sample opens as a *project*.
+
+The site is the fastest way in: it renders the drawing sheets, which GitHub's file browser shows
+one at a time behind a click.
 
 ---
 
