@@ -27,12 +27,12 @@
   "lod_stages": {
    "500": 5480
   },
-  "bytes": 5700056
+  "bytes": 5697156
  },
  "meridian_commerce_center": {
   "schema": "IFC4",
-  "products": 18759,
-  "elements": 10072,
+  "products": 21459,
+  "elements": 12772,
   "types": 3,
   "material_sets": 3,
   "spaces": 108,
@@ -40,24 +40,24 @@
   "analytical_members": 2748,
   "analytical_actions": 2748,
   "analytical_supports": 1959,
-  "assemblies": 600,
+  "assemblies": 1116,
   "rebar": 0,
-  "fasteners": 2100,
+  "fasteners": 3768,
   "ports": 1098,
   "coverage": {
    "lod_stage": 1.0,
    "as_built": 1.0,
    "measured_dim": 1.0,
-   "manufacturer": 0.7770055599682287,
+   "manufacturer": 0.7837456937049796,
    "phase": 1.0,
-   "spec_link": 0.15885623510722796
+   "spec_link": 0.1252740369558409
   },
   "classified": 1.0,
-  "materialed": 0.9403296266878475,
+  "materialed": 0.9125430629502036,
   "lod_stages": {
-   "500": 10072
+   "500": 12772
   },
-  "bytes": 10353687
+  "bytes": 12646265
  },
  "cascade_regional_terminal": {
   "schema": "IFC4",
@@ -87,7 +87,7 @@
   "lod_stages": {
    "500": 4492
   },
-  "bytes": 4664272
+  "bytes": 4657851
  },
  "ashgrove_select_hotel": {
   "schema": "IFC4",
@@ -117,7 +117,7 @@
   "lod_stages": {
    "500": 3780
   },
-  "bytes": 3992242
+  "bytes": 3995580
  },
  "ironline_distribution_center": {
   "schema": "IFC4",
@@ -147,7 +147,7 @@
   "lod_stages": {
    "500": 3286
   },
-  "bytes": 3550017
+  "bytes": 3549768
  },
  "vantage_point_asc": {
   "schema": "IFC4",
@@ -177,12 +177,12 @@
   "lod_stages": {
    "500": 2607
   },
-  "bytes": 2828488
+  "bytes": 2827685
  },
  "foundry_row_mixed_use": {
   "schema": "IFC4",
-  "products": 10832,
-  "elements": 7054,
+  "products": 13382,
+  "elements": 9604,
   "types": 3,
   "material_sets": 3,
   "spaces": 120,
@@ -190,24 +190,24 @@
   "analytical_members": 1070,
   "analytical_actions": 1070,
   "analytical_supports": 440,
-  "assemblies": 250,
-  "rebar": 4000,
+  "assemblies": 400,
+  "rebar": 6400,
   "fasteners": 0,
   "ports": 1056,
   "coverage": {
    "lod_stage": 1.0,
    "as_built": 1.0,
    "measured_dim": 1.0,
-   "manufacturer": 0.9174936206407712,
+   "manufacturer": 0.9237817576009996,
    "phase": 1.0,
-   "spec_link": 0.2174652679330876
+   "spec_link": 0.15972511453561017
   },
   "classified": 1.0,
-  "materialed": 0.9190530195633683,
+  "materialed": 0.9249271137026239,
   "lod_stages": {
-   "500": 7054
+   "500": 9604
   },
-  "bytes": 7477765
+  "bytes": 9717844
  },
  "northbridge_data_hall": {
   "schema": "IFC4",
@@ -237,6 +237,6 @@
   "lod_stages": {
    "500": 1014
   },
-  "bytes": 1200682
+  "bytes": 1200390
  }
 }

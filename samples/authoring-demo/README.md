@@ -30,9 +30,22 @@ The application repository also ships `riverside_school_structural.mass` — a 1
 structural frame with 619 reinforcing bars across five storeys, and by some distance the most
 substantial model in that library.
 
-It is **not** copied here, deliberately. That model derives from the openly-published That Open
-school model, so its geometry is third-party work. Everything in this repository is dedicated to the
-public domain under CC0, and re-dedicating somebody else's model under CC0 is not ours to do. It
-stays where its provenance is recorded.
+It is **not** copied here, and the reason is worth stating precisely, because it is further from
+"openly published" than it looks. The IFC's own header records where it came from:
 
-If you want it, take it from the application repository, and check its upstream terms for your use.
+```
+FILE_NAME('rstadvancedsampleproject.ifczip', ...,
+          'Autodesk Revit 24.3.10.22 (ENU)');
+```
+
+`rstadvancedsampleproject` is the **Revit Structure Advanced Sample Project** — Autodesk's own
+sample content, shipped with Revit and governed by Autodesk's licence terms. That Open redistributed
+it as a test model; they did not author it, and redistribution is not a grant of rights.
+
+So the chain is Autodesk → That Open → here, and nowhere along it does anyone acquire the right to
+dedicate that geometry to the public domain. Everything in this repository is CC0. Putting a
+third-party model under that dedication would be claiming an authority we do not have, and it would
+be the kind of claim that is worse for being confident.
+
+Every model in this library is therefore synthetic and generated, which is also why the sector
+samples exist at all: the alternative to a licensing question is a building you made yourself.

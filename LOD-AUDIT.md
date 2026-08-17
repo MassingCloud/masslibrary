@@ -9,12 +9,12 @@ Share of `IfcElement` occurrences carrying each part of the LOD 500 record.
 | Sample | Elements | LOD stage | As-built | Measured dim | Manufacturer | Classified | Material |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | Harborview Residences | 5,480 | 100% | 100% | 100% | 92% | 100% | 93% |
-| Meridian Commerce Center | 10,072 | 100% | 100% | 100% | 78% | 100% | 94% |
+| Meridian Commerce Center | 12,772 | 100% | 100% | 100% | 78% | 100% | 91% |
 | Cascade Regional Terminal | 4,492 | 100% | 100% | 100% | 82% | 100% | 90% |
 | Ashgrove Select Service Hotel | 3,780 | 100% | 100% | 100% | 92% | 100% | 92% |
 | Ironline Distribution Center | 3,286 | 100% | 100% | 100% | 85% | 100% | 85% |
 | Vantage Point Ambulatory Surgery Center | 2,607 | 100% | 100% | 100% | 84% | 100% | 84% |
-| Foundry Row | 7,054 | 100% | 100% | 100% | 92% | 100% | 92% |
+| Foundry Row | 9,604 | 100% | 100% | 100% | 92% | 100% | 92% |
 | Northbridge Data Hall | 1,014 | 100% | 100% | 100% | 84% | 100% | 84% |
 
 `Manufacturer` and `Material` are below 100% by design, and by the same reason: an `IfcOpeningElement` is a void and an `IfcElementAssembly` is a grouping — neither is a thing anybody manufactures or pours. Every element that is a physical product carries both. The remainder is exactly the void-and-grouping population, which is why the two columns track each other.
@@ -24,12 +24,12 @@ Share of `IfcElement` occurrences carrying each part of the LOD 500 record.
 | Sample | Schema | Assemblies | Rebar | Fasteners | Analytical members | Loads | Supports | MEP ports |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
 | Harborview Residences | IFC4 | 240 | 3,600 | 0 | 636 | 636 | 280 | 642 |
-| Meridian Commerce Center | IFC4 | 600 | 0 | 2,100 | 2,748 | 2,748 | 1,959 | 1,098 |
+| Meridian Commerce Center | IFC4 | 1,116 | 0 | 3,768 | 2,748 | 2,748 | 1,959 | 1,098 |
 | Cascade Regional Terminal | IFC4 | 466 | 0 | 1,568 | 818 | 818 | 671 | 468 |
 | Ashgrove Select Service Hotel | IFC4 | 165 | 2,475 | 0 | 425 | 425 | 198 | 441 |
 | Ironline Distribution Center | IFC4 | 405 | 0 | 1,358 | 405 | 405 | 286 | 397 |
 | Vantage Point Ambulatory Surgery Center | IFC4 | 321 | 0 | 1,083 | 321 | 321 | 160 | 321 |
-| Foundry Row | IFC4 | 250 | 4,000 | 0 | 1,070 | 1,070 | 440 | 1,056 |
+| Foundry Row | IFC4 | 400 | 6,400 | 0 | 1,070 | 1,070 | 440 | 1,056 |
 | Northbridge Data Hall | IFC4 | 121 | 0 | 408 | 121 | 121 | 90 | 125 |
 
 ## Space and area

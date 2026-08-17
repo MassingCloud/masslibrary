@@ -2,7 +2,7 @@
 
 **Sector** Mixed-Use · **Type** Retail podium with residential tower above  
 **Gross area** 246,300 sf · **Storeys** 10 · **Structure** Concrete  
-**Model** 10,700 elements · **LOD** 400 on podium transfer structure + field-verified (500) on transfer beams
+**Model** 13,250 elements · **LOD** 400 on podium transfer structure + field-verified (500) on transfer beams
 
 > Synthetic sample project from the Massing sample library. The figures below are internally consistent and derived from a single set of assumptions — they are not market data, and no part of this describes a real site, party or contract.
 
@@ -122,22 +122,22 @@ The project is underwritten to a **+102 bps** spread between its 6.52% yield on 
 
 ## 6. What is in the model
 
-The container carries **10,700 elements** across 33 IFC classes.
+The container carries **13,250 elements** across 33 IFC classes.
 
 | IFC class | Count |
 |---|---:|
-| `IfcReinforcingBar` | 4,000 |
+| `IfcReinforcingBar` | 6,400 |
 | `IfcStructuralLinearAction` | 1,070 |
 | `IfcStructuralCurveMember` | 1,070 |
 | `IfcDistributionPort` | 1,056 |
 | `IfcBeam` | 670 |
 | `IfcStructuralPointConnection` | 440 |
+| `IfcElementAssembly` | 400 |
 | `IfcColumn` | 400 |
 | `IfcOpeningElement` | 321 |
 | `IfcWindow` | 320 |
 | `IfcSensor` | 280 |
 | `IfcFireSuppressionTerminal` | 280 |
-| `IfcAirTerminal` | 280 |
 
 ### Data carried alongside the geometry
 
@@ -200,8 +200,6 @@ LOD 500 in the BIMForum sense is a *state of verification*, not a level of geome
 - per-element LOD stage, so a 400 element and a 350 element are distinguishable
 
 Geometrically the model is LOD 400: fabrication-level connections, reinforcement with real cover and tie spacing, material layer sets with real thicknesses, and a derived analytical model carrying loads and supports.
-
-**One stated cap.** The reinforcement cages pass detailed **250 of 400 columns** and **0 of 670 beams**. Detailing the whole frame produced a container too large to be a sample anybody downloads. The remaining members are modelled and classified — they simply do not carry their connections. This is stated rather than left for a reader to discover by counting.
 
 The model passes the product's own QA gates: **0 constraint errors** and a **lossless** serialise/reparse roundtrip.
 

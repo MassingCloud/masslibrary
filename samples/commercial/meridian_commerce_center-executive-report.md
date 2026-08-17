@@ -2,7 +2,7 @@
 
 **Sector** Commercial · **Type** Speculative office tower, core and shell  
 **Gross area** 268,000 sf · **Storeys** 12 · **Structure** Steel  
-**Model** 18,637 elements · **LOD** 400 on frame and connections + field-verified (500) on the core
+**Model** 21,337 elements · **LOD** 400 on frame and connections + field-verified (500) on the core
 
 > Synthetic sample project from the Massing sample library. The figures below are internally consistent and derived from a single set of assumptions — they are not market data, and no part of this describes a real site, party or contract.
 
@@ -122,19 +122,19 @@ The project is underwritten to a **+81 bps** spread between its 7.56% yield on c
 
 ## 6. What is in the model
 
-The container carries **18,637 elements** across 35 IFC classes.
+The container carries **21,337 elements** across 35 IFC classes.
 
 | IFC class | Count |
 |---|---:|
-| `IfcPlate` | 3,480 |
+| `IfcPlate` | 3,996 |
+| `IfcMechanicalFastener` | 3,768 |
 | `IfcStructuralLinearAction` | 2,748 |
 | `IfcStructuralCurveMember` | 2,748 |
-| `IfcMechanicalFastener` | 2,100 |
 | `IfcStructuralPointConnection` | 1,959 |
 | `IfcMember` | 1,632 |
+| `IfcElementAssembly` | 1,116 |
 | `IfcDistributionPort` | 1,098 |
 | `IfcBeam` | 696 |
-| `IfcElementAssembly` | 600 |
 | `IfcColumn` | 420 |
 | `IfcSensor` | 288 |
 | `IfcFireSuppressionTerminal` | 288 |
@@ -200,8 +200,6 @@ LOD 500 in the BIMForum sense is a *state of verification*, not a level of geome
 - per-element LOD stage, so a 400 element and a 350 element are distinguishable
 
 Geometrically the model is LOD 400: fabrication-level connections, reinforcement with real cover and tie spacing, material layer sets with real thicknesses, and a derived analytical model carrying loads and supports.
-
-**One stated cap.** The steel connections pass detailed **300 of 420 columns** and **300 of 696 beams**. Detailing the whole frame produced a container too large to be a sample anybody downloads. The remaining members are modelled and classified — they simply do not carry their connections. This is stated rather than left for a reader to discover by counting.
 
 The model passes the product's own QA gates: **0 constraint errors** and a **lossless** serialise/reparse roundtrip.
 

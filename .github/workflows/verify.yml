@@ -1,0 +1,87 @@
+name: Verify containers
+
+# A broken container is invisible: it still appears in a listing, still has a plausible size, and
+# only fails when somebody opens it. This runs the same check a visitor can run — pure standard
+# library, no Massing, no ifcopenshell, no modelmaker checkout — on every push.
+
+on:
+  push:
+    branches: [main]
+    paths: ['samples/**', 'tools/verify_containers.py', '.github/workflows/verify.yml']
+  pull_request:
+    paths: ['samples/**', 'tools/verify_containers.py', '.github/workflows/verify.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  containers:
+    name: Containers open and describe themselves
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Validates the archive, the manifest's own entry inventory against what is actually in the
+      # archive, the element index against the manifest's element count, and that every
+      # data/*.json is an array of row objects.
+      - name: Verify every .mass
+        run: python tools/verify_containers.py
+
+      # The sector definitions drive every figure in the library — gross area, cost per square foot,
+      # rent, the pro forma. Nothing ties them to the geometry automatically, so they drifted once:
+      # a 372,000 sf office was declared against a footprint that builds 173,000 sf, and the
+      # executive report priced the larger number against the smaller building.
+      - name: Check declared areas agree with the geometry
+        run: python tools/sectors.py
+
+      # Each sample folder must carry its documents. A container with no readable companion is a
+      # sample only somebody with the app can evaluate.
+      - name: Check every sample carries its documents
+        run: |
+          set -euo pipefail
+          fail=0
+          for mass in samples/*/*.mass; do
+            dir=$(dirname "$mass")
+            key=$(basename "$mass" .mass)
+            case "$dir" in *authoring-demo) continue ;; esac
+            for suffix in executive-report.md budget.csv schedule.csv proforma.csv \
+                          space-program.csv approvals.csv risk-register.csv \
+                          procurement.csv sheet-register.csv; do
+              if [ ! -f "$dir/$key-$suffix" ]; then
+                echo "::error file=$mass::missing $key-$suffix"
+                fail=1
+              fi
+            done
+            if [ ! -d "$dir/$key-sheets" ]; then
+              echo "::error file=$mass::missing $key-sheets/"
+              fail=1
+            fi
+          done
+          exit $fail
+
+      # The site links every container and sheet by relative path. A page pointing at a file that
+      # is not there is a 404 nobody notices until a visitor finds it.
+      - name: Check the site has no broken local links
+        run: |
+          python - <<'PY'
+          import os, re, sys
+          bad = []
+          for name in sorted(os.listdir('docs')):
+              if not name.endswith('.html'):
+                  continue
+              src = open(os.path.join('docs', name), encoding='utf-8').read()
+              for ref in re.findall(r'(?:href|src)="([^"]+)"', src):
+                  if ref.startswith(('http', 'data:', '#', 'mailto')):
+                      continue
+                  if not os.path.exists(os.path.join('docs', ref)):
+                      bad.append(f'{name} -> {ref}')
+          for b in bad:
+              print(f'::error::broken link {b}')
+          print(f'{len(bad)} broken link(s)')
+          sys.exit(1 if bad else 0)
+          PY

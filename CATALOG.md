@@ -7,15 +7,15 @@ Generated from the built containers by `tools/catalog.py` — every figure below
 | Sample | Sector | Elements | Tables | Rows | Container | Storeys | Gross area |
 |---|---|---:|---:|---:|---:|---:|---:|
 | [Harborview Residences](samples/residential/harborview_residences.mass) | Residential | 5,480 | 20 | 189 | 5.70 MB | 6 | 118,200 sf |
-| [Meridian Commerce Center](samples/commercial/meridian_commerce_center.mass) | Commercial | 10,072 | 20 | 195 | 10.35 MB | 12 | 268,000 sf |
+| [Meridian Commerce Center](samples/commercial/meridian_commerce_center.mass) | Commercial | 12,772 | 20 | 195 | 12.65 MB | 12 | 268,000 sf |
 | [Cascade Regional Terminal](samples/aviation/cascade_regional_terminal.mass) | Aviation | 4,492 | 20 | 191 | 4.66 MB | 2 | 266,900 sf |
-| [Ashgrove Select Service Hotel](samples/hospitality/ashgrove_select_hotel.mass) | Hospitality | 3,780 | 20 | 189 | 3.99 MB | 5 | 84,600 sf |
+| [Ashgrove Select Service Hotel](samples/hospitality/ashgrove_select_hotel.mass) | Hospitality | 3,780 | 20 | 189 | 4.00 MB | 5 | 84,600 sf |
 | [Ironline Distribution Center](samples/industrial/ironline_distribution_center.mass) | Industrial | 3,286 | 20 | 186 | 3.55 MB | 1 | 340,000 sf |
 | [Vantage Point Ambulatory Surgery Center](samples/healthcare/vantage_point_asc.mass) | Healthcare | 2,607 | 20 | 193 | 2.83 MB | 3 | 95,900 sf |
-| [Foundry Row](samples/mixed-use/foundry_row_mixed_use.mass) | Mixed-Use | 7,054 | 20 | 194 | 7.48 MB | 10 | 246,300 sf |
+| [Foundry Row](samples/mixed-use/foundry_row_mixed_use.mass) | Mixed-Use | 9,604 | 20 | 194 | 9.72 MB | 10 | 246,300 sf |
 | [Northbridge Data Hall](samples/data-center/northbridge_data_hall.mass) | Data Center | 1,014 | 20 | 191 | 1.20 MB | 1 | 63,000 sf |
 
-**8 generated containers · 37,785 elements · 39.8 MB.**
+**8 generated containers · 43,035 elements · 44.3 MB.**
 
 ### Contributed and demonstration containers
 
@@ -86,11 +86,11 @@ Element counts by IFC class, read from each container's element index.
 
 | IFC class | Count |
 |---|---:|
-| `IfcPlate` | 3,480 |
-| `IfcMechanicalFastener` | 2,100 |
+| `IfcPlate` | 3,996 |
+| `IfcMechanicalFastener` | 3,768 |
 | `IfcMember` | 1,632 |
+| `IfcElementAssembly` | 1,116 |
 | `IfcBeam` | 696 |
-| `IfcElementAssembly` | 600 |
 | `IfcColumn` | 420 |
 | `IfcSensor` | 288 |
 | `IfcAirTerminal` | 288 |
@@ -100,7 +100,7 @@ Element counts by IFC class, read from each container's element index.
 | `IfcFooting` | 35 |
 | `IfcRailing` | 22 |
 | `IfcPipeSegment` | 15 |
-| **Total indexed** | **10,072** |
+| **Total indexed** | **12,772** |
 
 ### Cascade Regional Terminal
 
@@ -196,21 +196,21 @@ Element counts by IFC class, read from each container's element index.
 
 | IFC class | Count |
 |---|---:|
-| `IfcReinforcingBar` | 4,000 |
+| `IfcReinforcingBar` | 6,400 |
 | `IfcBeam` | 670 |
 | `IfcColumn` | 400 |
+| `IfcElementAssembly` | 400 |
 | `IfcOpeningElement` | 321 |
 | `IfcWindow` | 320 |
 | `IfcSensor` | 280 |
 | `IfcAirTerminal` | 280 |
 | `IfcFireSuppressionTerminal` | 280 |
-| `IfcElementAssembly` | 250 |
 | `IfcDuctSegment` | 80 |
 | `IfcFooting` | 40 |
 | `IfcWall` | 40 |
 | `IfcRailing` | 18 |
 | `IfcPipeSegment` | 13 |
-| **Total indexed** | **7,054** |
+| **Total indexed** | **9,604** |
 
 ### Northbridge Data Hall
 

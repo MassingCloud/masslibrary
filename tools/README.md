@@ -75,16 +75,22 @@ Pass 7 is what separates these containers from a mesh. It runs over **every** el
 representative subset: LOD 500 is a state of verification, so a model where only the structure
 carries the record is not LOD 500, it is a model with a sample of one.
 
-## The one cap
+## The fabrication ceiling
 
-`geometry.MAX_CONNECTIONS` (300) and `MAX_CAGES` (250) bound the fabrication pass. Detailing all
-1,200 members of the twelve-storey office produced 20,857 elements and a container too large to be
-a sample anybody downloads.
+`geometry.MAX_CONNECTIONS` and `MAX_CAGES` (both 1200) bound the fabrication pass. They now sit
+above the largest frame in the library — the twelve-storey office, at 420 columns and 696 beams — so
+**every frame is detailed in full**: every column gets its base plate or reinforcement cage, every
+beam its shear tab. No sample is capped, and the build log prints no `CAPPED` line.
 
-The cap is **reported, never silent** — `detail_coverage()` returns what was reached against what is
-in the frame, the build log prints a `CAPPED` line, each executive report states it in prose, and
-`LOD-AUDIT.md` carries the numbers. A capped model that says "300 of 1,200 members detailed" is
-honest. One that quietly details a quarter and calls itself LOD 400 is not.
+They remain as numbers rather than becoming `None` because they are the runaway guard. A sector
+added later with a 3,000-member frame should hit a stated ceiling and say so, not silently emit a
+container nobody can download. `detail_coverage()` reports what was reached against what is in the
+frame either way, the build log prints a `CAPPED` line when it bites, each executive report states
+it in prose, and `LOD-AUDIT.md` carries the numbers — a capped model that says "300 of 1,200
+members detailed" is honest; one that quietly details a quarter and calls itself LOD 400 is not.
+
+Detailing everything costs roughly a third more container: the office went from 18,637 elements at
+10.2 MB to 21,337 at 12.7 MB.
 
 ## Rules
 

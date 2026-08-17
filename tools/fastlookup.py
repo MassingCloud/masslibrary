@@ -31,12 +31,33 @@ from __future__ import annotations
 import contextlib
 
 
+def _already_fast(fn) -> bool:
+    """True when the upstream `_element` already resolves by hash.
+
+    The fix now exists upstream, so against a current checkout this module has nothing to do — and a
+    workaround that keeps applying itself after its cause is gone is how a codebase accumulates
+    folklore. It stays only because `MASSING_SRC` can point at any checkout, including one predating
+    the fix; against those it still earns its keep.
+    """
+    try:
+        import inspect
+        return "by_guid" in inspect.getsource(fn)
+    except (OSError, TypeError):
+        return False                       # unreadable source — patch, which is the safe default
+
+
 @contextlib.contextmanager
 def fast_element_lookup():
-    """Patch `_element` to a hash lookup for the duration of the block, then restore it."""
+    """Patch `_element` to a hash lookup for the duration of the block, then restore it.
+
+    A no-op against a checkout that already has the upstream fix.
+    """
     from aec_data import edit_core
 
     original = edit_core._element
+    if _already_fast(original):
+        yield 0
+        return
 
     def _element(model, guid: str):
         try:

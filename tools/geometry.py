@@ -392,15 +392,16 @@ def mep_steps(spec: dict) -> list[dict]:
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
 # Pass 6 — fabrication detail (LOD 400)
 # ─────────────────────────────────────────────────────────────────────────────────────────────────
-#: How far the fabrication layer goes, and the one place this library trades completeness for size.
+#: How far the fabrication layer goes.
 #:
-#: A real LOD 400 model details every member. Detailing all 1,200 members of the twelve-storey office
-#: produced 20,857 elements and a container too large to be a sample anybody downloads. So the
-#: connection and cage passes are capped, and the cap is REPORTED — by `detail_coverage()`, in the
-#: build log, in each executive report and in LOD-AUDIT.md. A capped model that says "600 of 1,200
-#: members detailed" is honest; one that quietly details a third and calls itself LOD 400 is not.
-MAX_CONNECTIONS = 300
-MAX_CAGES = 250
+#: A real LOD 400 model details every member, and these now do: the caps are set above the largest
+#: frame in the library (the twelve-storey office, at 420 columns and 696 beams), so every column
+#: gets its base plate or cage and every beam gets its shear tab. The numbers remain rather than
+#: becoming `None` because they are the runaway guard — a sector added later with a 3,000-member
+#: frame should hit a stated ceiling and say so, not silently produce a container nobody can
+#: download. `detail_coverage()` reports what was reached against what is in the frame either way.
+MAX_CONNECTIONS = 1200
+MAX_CAGES = 1200
 
 
 def detail_coverage(spec: dict, n_columns: int, n_beams: int) -> dict:

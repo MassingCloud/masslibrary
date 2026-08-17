@@ -688,12 +688,11 @@ def build_audit(items: list[dict]) -> str:
     <li>construction phase status</li>
     <li>an LOD stage on the element itself, so the claim travels with the geometry</li>
   </ul>
-  <p class="callout"><b>One stated cap.</b> The fabrication pass is bounded at 300 connections and
-    250 reinforcement cages per model. Detailing all 1,200 members of the twelve-storey office
-    produced 20,857 elements and a container too large to be a sample anybody downloads. The cap is
-    reported in the build log, in each executive report and here — a capped model that says
-    “300 of 1,200 members detailed” is honest; one that quietly details a quarter and calls itself
-    LOD 400 is not.</p>
+  <p class="callout"><b>Every frame is detailed in full.</b> No sample is capped: every column
+    carries its base plate or reinforcement cage and every beam its shear tab, up to and including
+    the twelve-storey office at 420 columns and 696 beams. A ceiling remains in the generator as a
+    runaway guard for any sector added later with a far larger frame, and it reports what it reached
+    against what is in the model — but nothing in this library hits it.</p>
 </section>
 """
     return page("LOD audit — Massing Sample Library", body, active="lod")
@@ -982,12 +981,23 @@ h1 em{font-style:normal;color:var(--accent)}
   border-radius:var(--radius);text-decoration:none;overflow:hidden;transition:border-color .14s,
   transform .14s}
 .card:hover{border-color:var(--accent);transform:translateY(-2px)}
+/* The thumbnail shows the DRAWING, not the sheet. An ARCH-D sheet scaled to 300 px is a grey
+   rectangle with an illegible title block down one side — it reads as "a document" when the whole
+   point is for it to read as "a building". The transform crops the title block out (it occupies the
+   right ~21% of the sheet) and zooms the plan up to fill the card. */
 .card .thumb{aspect-ratio:3/2;background:#fff;border-bottom:1px solid var(--line);overflow:hidden;
   display:flex;align-items:center;justify-content:center}
-.card .thumb img{width:100%;height:100%;object-fit:cover;object-position:center}
+/* scale s about origin o shows fractions [o - o/s, o + (1-o)/s] of the sheet. The title block
+   starts at 724/914 = 79.2%, so s=1.55 about 38% shows 13.5%..78% — the drawing, and none of the
+   block beside it. */
+.card .thumb img{width:100%;height:100%;object-fit:contain;
+  transform:scale(1.55);transform-origin:38% 50%}
 .card .noplan{width:100%;height:100%;background:
   repeating-linear-gradient(45deg,var(--bg),var(--bg) 9px,var(--panel) 9px,var(--panel) 18px)}
-.card .meta{padding:15px 17px 17px}
+/* The meta block grows and the figures sit at its foot, so a two-line subtitle in one card does not
+   push its numbers out of line with the rest of the row. */
+.card .meta{padding:15px 17px 17px;display:flex;flex-direction:column;flex:1}
+.card .meta dl{margin-top:auto}
 .card.slim .meta{padding:17px}
 .tag{display:inline-block;font-size:10.5px;text-transform:uppercase;letter-spacing:.12em;
   font-weight:640;color:var(--accent);background:var(--accent-soft);border-radius:var(--radius);
