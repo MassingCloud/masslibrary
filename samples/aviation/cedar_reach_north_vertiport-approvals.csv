@@ -1,0 +1,10 @@
+Ref,Approval,Type,Authority,Number,Status,Applied,Issued,Expires
+PMT-001,FAA Part 157 notice - Form 7480-1,Right-of-Way,FAA Airports District Office,,Applied,2027-12-01,,
+PMT-002,FAA Form 7460-1 / OE-AAA obstruction evaluation,Right-of-Way,FAA Obstruction Evaluation,,Applied,2027-12-01,,
+PMT-003,Conditional use permit / site plan approval,Building,City planning and zoning,,Applied,2027-11-01,,
+PMT-004,Building permit,Building,City building safety,,Applied,2028-10-01,,
+PMT-005,Grading and stormwater permit,Grading / Sitework,City public works / ADEQ,,Applied,2028-10-01,,
+PMT-006,Fire / life-safety review,Fire / Life-Safety,Fire marshal,,Under Review,2028-06-01,,
+PMT-007,Electrical service and interconnection,Electrical,Electric utility,,Under Review,2028-03-01,,
+PMT-008,State heliport/vertiport registration,Right-of-Way,State aviation agency,,Applied,2028-11-01,,
+PMT-009,Certificate of Occupancy,Certificate of Occupancy,City building safety,,Applied,2030-01-01,,

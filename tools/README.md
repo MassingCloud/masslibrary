@@ -20,6 +20,7 @@ build it with the product's own code.
 | `build_library.py` | The pipeline: author → index → fragments → database → `.mass` → sheets → documents → verify. |
 | `catalog.py` | Regenerates `CATALOG.md` by reading the built containers' own manifests. |
 | `verify_containers.py` | Checks every container **with nothing but the standard library** — no Massing, no ifcopenshell. |
+| `export_container_csv.py` | Reads any `.mass` and writes its data tables out as CSV beside it. Also stdlib-only. |
 | `fastlookup.py` | A build-time GUID-lookup accelerator. Output-identical; see the note at the bottom. |
 
 `verify_containers.py` is the one to run if you have just cloned this repo and want to know the

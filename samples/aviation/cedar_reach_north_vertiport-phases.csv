@@ -1,0 +1,9 @@
+Ref,Phase,RIBA stage,AIA phase,Order,Planned start,Planned finish,Deliverables
+PH-001,Feasibility,Stage 1,Pre-Design,1,2027-03-01,2027-07-31,Site/airspace constraints understood; design aircraft and facility type selected.
+PH-002,30% Schematic Design,Stage 2,Schematic Design,2,2027-08-01,2027-11-30,"Preliminary layout, aircraft envelope, obstacles, access, utility and fire concept, initial budget and schedule."
+PH-003,FAA / AHJ pre-application,Stage 2,Schematic Design,3,2027-08-01,2027-12-31,Submission exhibits reviewed; open issues assigned; filing path confirmed.
+PH-004,60% Design Development,Stage 3,Design Development,4,2028-03-01,2028-06-30,"Structural loads, drainage, charging, emergency response, marking/lighting and permit approach coordinated."
+PH-005,90% Construction Documents,Stage 4,Construction Documents,5,2028-06-01,2028-10-31,Federated-model clash report closed; cost/schedule reconciliation; specifications and special inspections complete.
+PH-006,Permit and buyout,Stage 4,Bidding,6,2028-10-01,2029-02-28,FAA/local/state/utility comments resolved or tracked with accepted conditions.
+PH-007,Construction,Stage 5,Construction Administration,7,2029-02-01,2030-01-31,"Contractor logistics, crane/temporary-obstruction plan, FOD plan and quality plan approved."
+PH-008,Pre-activation,Stage 6,Closeout,8,2029-12-01,2030-02-28,"Final survey, lighting tests, power tests, drainage, fire inspection/drill, operator training, O&M and record documents complete."

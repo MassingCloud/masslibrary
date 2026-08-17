@@ -39,30 +39,53 @@ jobs:
       - name: Check declared areas agree with the geometry
         run: python tools/sectors.py
 
-      # Each sample folder must carry its documents. A container with no readable companion is a
-      # sample only somebody with the app can evaluate.
-      - name: Check every sample carries its documents
+      # Each sample must be readable without the app. Rather than demand a fixed list of files from
+      # every container — which fails a contributed package for lacking a table it never had — the
+      # requirement is derived from what the container actually holds: carry a table, and the CSV
+      # beside it must exist. `tools/export_container_csv.py` produces them for any container.
+      - name: Check every sample carries its data as readable files
         run: |
-          set -euo pipefail
-          fail=0
-          for mass in samples/*/*.mass; do
-            dir=$(dirname "$mass")
-            key=$(basename "$mass" .mass)
-            case "$dir" in *authoring-demo) continue ;; esac
-            for suffix in executive-report.md budget.csv schedule.csv proforma.csv \
-                          space-program.csv approvals.csv risk-register.csv \
-                          procurement.csv sheet-register.csv; do
-              if [ ! -f "$dir/$key-$suffix" ]; then
-                echo "::error file=$mass::missing $key-$suffix"
-                fail=1
-              fi
-            done
-            if [ ! -d "$dir/$key-sheets" ]; then
-              echo "::error file=$mass::missing $key-sheets/"
-              fail=1
-            fi
-          done
-          exit $fail
+          python - <<'PY'
+          import glob, json, os, sys, zipfile
+
+          # table in the container -> companion file that must sit beside it
+          COMPANION = {
+              "mod_budget": "budget.csv",
+              "mod_schedule_activity": "schedule.csv",
+              "mod_sov": "schedule-of-values.csv",
+              "mod_permit": "approvals.csv",
+              "mod_risk": "risk-register.csv",
+              "mod_procurement_package": "procurement.csv",
+              "mod_drawing": "sheet-register.csv",
+              "mod_space_program": "space-program.csv",
+              "scenarios": "proforma.csv",
+          }
+
+          fail = 0
+          for mass in sorted(glob.glob("samples/*/*.mass")):
+              d, key = os.path.dirname(mass), os.path.basename(mass)[:-5]
+              with zipfile.ZipFile(mass) as z:
+                  tables = json.loads(z.read("manifest.json")).get("tables") or {}
+
+              # The authoring demo predates the commercial data and carries none of it on purpose.
+              if not any(t in COMPANION for t in tables):
+                  print(f"ok    {key}: no data tables, nothing required")
+                  continue
+
+              missing = [f"{key}-{fn}" for t, fn in COMPANION.items()
+                         if tables.get(t) and not os.path.exists(os.path.join(d, f"{key}-{fn}"))]
+              if not os.path.exists(os.path.join(d, f"{key}-executive-report.md")):
+                  missing.append(f"{key}-executive-report.md")
+              if not os.path.isdir(os.path.join(d, f"{key}-sheets")):
+                  missing.append(f"{key}-sheets/")
+
+              for m in missing:
+                  print(f"::error file={mass}::missing {m}")
+              fail |= bool(missing)
+              print(f"{'FAIL ' if missing else 'ok   '} {key}: "
+                    f"{sum(1 for t in tables if t in COMPANION)} table(s), {len(missing)} missing")
+          sys.exit(1 if fail else 0)
+          PY
 
       # The site links every container and sheet by relative path. A page pointing at a file that
       # is not there is a 404 nobody notices until a visitor finds it.

@@ -1,0 +1,11 @@
+Ref,Risk,Category,Impact,Probability,Response,Owner,Cost exposure,Schedule exposure (days)
+RISK-001,Design aircraft not selected - all geometry is provisional,Design,High,High,Mitigate,Development manager,1200000,
+RISK-002,FAA determination later than the 90-day minimum,Permitting,High,Medium,Accept,Development manager,0,
+RISK-003,Utility capacity / transformer lead time,Procurement,High,High,Mitigate,Development manager,850000,
+RISK-004,Entitlement / public hearing outcome,Permitting,High,Medium,Mitigate,Development manager,400000,
+RISK-005,Obstacle penetration requiring mitigation,Design,Medium,Medium,Mitigate,Development manager,300000,
+RISK-006,Battery thermal-event response not yet agreed with the fire marshal,Safety,High,Medium,Mitigate,Development manager,250000,
+RISK-007,Revenue assumptions unsupported by an operator agreement,Cost,High,High,Mitigate,Development manager,0,
+RISK-008,Downwash/outwash data not supplied by the OEM,Design,Medium,High,Mitigate,Development manager,180000,
+RISK-009,Escalation on a 36-month capitalization period,Cost,Medium,High,Accept,Development manager,900000,
+RISK-010,Crane / temporary obstruction during construction,Safety,Medium,Medium,Mitigate,Development manager,75000,

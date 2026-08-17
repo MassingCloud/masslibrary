@@ -1,0 +1,24 @@
+Activity ID,WBS,Activity name,Type,Trade,Start,Finish,Duration,Predecessor,Cost code,Budget
+ACT-001,1.1,Project initiation and site due diligence,Task,Sitework,2027-03-01,2027-05-31,65,,01,385000
+ACT-002,1.2,"Survey, geotechnical and utility investigation",Task,Sitework,2027-04-01,2027-06-30,65,ACT-001,01,385000
+ACT-003,1.3,Aircraft basis of design and ConOps,Task,,2027-04-01,2027-06-30,65,ACT-001,01,385000
+ACT-004,1.4,Preliminary aviation / obstacle / airspace analysis,Task,,2027-06-01,2027-08-31,65,"ACT-002,ACT-003",01,385000
+ACT-005,1.5,FAA and AHJ pre-application meeting,Milestone,,2027-08-01,2027-08-31,1,ACT-004,01,0
+ACT-006,2.1,Schematic design / 30% package,Task,,2027-08-01,2027-11-30,87,ACT-004,02,1650000
+ACT-007,2.2,FAA Part 157 notice (Form 7480-1) submitted,Milestone,,2027-12-01,2027-12-31,1,ACT-006,02,0
+ACT-008,2.3,"FAA aeronautical study - 90 day MINIMUM, not an approval",Task,,2027-12-01,2028-03-31,87,ACT-007,02,1650000
+ACT-009,2.4,"Municipal entitlement, zoning and public hearing",Task,,2027-11-01,2028-08-31,217,ACT-006,02,1650000
+ACT-010,2.5,Design development / 60% + utility capacity study + fire strategy,Task,,2028-03-01,2028-06-30,87,ACT-008,02,1650000
+ACT-011,2.6,Construction documents / 90-100%,Task,,2028-06-01,2028-10-31,108,ACT-010,02,1650000
+ACT-012,3.1,"Permit review, bidding and contractor buyout",Task,,2028-10-01,2029-02-28,108,"ACT-011,ACT-009",02,1650000
+ACT-013,3.2,"Long-lead procurement - switchgear, transformer, chargers, aviation lighting",Level of Effort,,2028-10-01,2029-11-30,304,ACT-011,08,3250000
+ACT-014,4.1,"Mobilization, site controls, FOD plan and survey control",Task,Sitework,2029-02-01,2029-03-31,43,ACT-012,13,1180000
+ACT-015,4.2,"Demolition, abatement, utility relocation and site enabling",Task,Sitework,2029-02-01,2029-04-30,65,ACT-014,03,420000
+ACT-016,4.3,"Earthwork, underground drainage/utilities, foundations, grounding",Task,Sitework,2029-03-01,2029-06-30,87,ACT-015,04,1850000
+ACT-017,4.4,"Pad/deck structural work, waterproofing, embeds, load-bearing surfaces",Task,Structure,2029-05-01,2029-09-30,108,ACT-016,05,2600000
+ACT-018,4.5,"Electrical service, switchgear, conduit, lighting bases, comms, FP rough-in, charging",Task,MEP,2029-06-01,2029-11-30,130,"ACT-017,ACT-013",08,3250000
+ACT-019,4.6,"Pavement/deck finishes, aviation markings, perimeter lighting, wind cone, beacon",Task,Finishes,2029-09-01,2029-12-31,87,ACT-017,06,780000
+ACT-020,4.7,"Terminal completion, security commissioning, landscape and restoration",Task,Interiors,2029-10-01,2030-01-31,87,ACT-018,11,1750000
+ACT-021,5.1,"Testing, survey verification, special inspections, emergency-power and fire inspection",Task,Commissioning,2029-12-01,2030-02-28,65,"ACT-019,ACT-020",14,310000
+ACT-022,5.2,"Operator training, emergency drill, punch list and record documents",Task,Commissioning,2030-01-01,2030-02-28,43,ACT-021,14,310000
+ACT-023,5.3,ACTIVATION / operational readiness,Milestone,,2030-02-01,2030-02-28,1,ACT-022,14,0

@@ -61,6 +61,21 @@ Two things were *added*, because the container was missing them:
   container shipped no longer described its own contents. An inventory that is wrong is worse than
   none — it reads as a verification and is not one.
 
+### Its CSVs came out of the container
+
+The generated samples get their companion CSVs from the same module that produced the container's
+rows. A contributed container has no such generator, so its data existed only inside the ZIP — which
+made it the one sample in the library you needed software to read.
+
+`tools/export_container_csv.py` closes that from the other direction: it opens any `.mass`, reads
+`data/mod_*.json`, and writes the same companion files. The vertiport's budget, schedule, approvals,
+risk register, procurement, sheet register, phase gates, cost codes and pro forma beside it are all
+exports of its own tables — not a second set of numbers.
+
+It has no space program, because a vertiport's programme is TLOF/FATO geometry rather than a room
+schedule. The CI check derives what each sample must carry from what its container actually holds,
+so a package is never failed for lacking a table it never had.
+
 ### Read the report before citing anything
 
 `cedar_reach_north_vertiport-executive-report.md` opens by stating what the package is not: it is

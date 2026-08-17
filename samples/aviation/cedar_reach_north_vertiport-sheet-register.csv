@@ -1,0 +1,29 @@
+Sheet,Title,Discipline,Revision,Status,Issued
+G0.01,Cover Sheet and Project Data,General,-,Not Issued,
+G0.02,Basis of Design,General,-,Not Issued,
+G0.03,Code and Approval Matrix,General,-,Not Issued,
+G0.04,Phasing and Construction Logistics,General,-,Not Issued,
+AV1.01,Aviation Overall Plan,General,A,For Review,2027-11-30
+AV1.02,Aviation Geometry and Marking Plan,General,A,For Review,2027-11-30
+AV1.03,Approach/Departure and Obstacle Plan,General,A,For Review,2027-11-30
+AV1.04,"Lighting, Wind Cone and Visual Aids",Electrical,-,Not Issued,
+AV1.05,Operational Safety Plan,General,A,For Review,2027-11-30
+C1.01,Existing Conditions and Demolition,Civil,-,Not Issued,
+C2.01,Site/Civil Layout,Civil,-,Not Issued,
+C3.01,Grading and Drainage,Civil,-,Not Issued,
+C4.01,Utilities,Civil,-,Not Issued,
+L1.01,Landscape and Site Restoration,Landscape,-,Not Issued,
+S0.01,Structural Criteria and Notes,Structural,-,Not Issued,
+S1.01,Foundation/Pad Plan,Structural,-,Not Issued,
+S2.01,Framing and Sections,Structural,-,Not Issued,
+S3.01,Structural Details,Structural,-,Not Issued,
+A1.01,Site/Terminal Plan,Architectural,-,Not Issued,
+A2.01,Roof Plan / Elevated Pad Plan,Architectural,-,Not Issued,
+FP1.01,Fire Protection / Emergency Plan,Fire Protection,-,Not Issued,
+E0.01,Electrical Basis and One-Line,Electrical,-,Not Issued,
+E1.01,Power Plan,Electrical,-,Not Issued,
+E2.01,Lighting and Controls Plan,Electrical,A,For Review,2027-11-30
+E3.01,Grounding / Lightning / Surge Plan,Electrical,-,Not Issued,
+M1.01,Mechanical / Ventilation Plan,Mechanical,-,Not Issued,
+T1.01,"Telecom, Weather and Security",Telecommunications,-,Not Issued,
+D0.01,Details and Schedules,General,-,Not Issued,
