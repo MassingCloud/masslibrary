@@ -163,8 +163,9 @@ section:not(.band) table.data{background:var(--panel);border:1px solid var(--lin
 .small{font-size:12.5px}
 .ticks{margin:14px 0 0;padding:0;list-style:none;display:grid;gap:7px}
 .ticks li{position:relative;padding-left:22px;font-size:14.5px;color:var(--dim)}
-.ticks li::before{content:"";position:absolute;left:4px;top:.62em;width:7px;height:7px;
-  border:1.5px solid var(--accent);border-top:0;border-right:0;transform:rotate(-45deg)}
+/* A tick, not a chevron: the arms have to be unequal. A square rotated 45 degrees reads as "v". */
+.ticks li::before{content:"";position:absolute;left:5px;top:.42em;width:5px;height:9px;
+  border:1.6px solid var(--accent);border-top:0;border-left:0;transform:rotate(40deg)}
 .ticks li b{color:var(--ink)}
 .files{list-style:none;margin:0;padding:0;display:grid;gap:0;background:var(--panel);
   border:1px solid var(--line);border-radius:var(--radius)}
